@@ -3,335 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shandy Virgi Firdaus — Mechanical &amp; Maintenance Engineer</title>
-<meta name="description" content="Portfolio Shandy Virgi Firdaus — Teknik Mesin, HVAC Maintenance, dan Quality Control berbasis Vision Sensor.">
+<title>Shandy Virgi Firdaus — Mechanical Engineering &amp; HVAC Maintenance</title>
+<meta name="description" content="Portofolio Shandy Virgi Firdaus: Teknik Mesin, HVAC Maintenance, Manufacturing,Operator Produksi dan Quality Control berbasis Vision Sensor.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ============ NAVBAR ============ -->
-<header class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="#home" class="nav-mark">SVF<span class="nav-mark-dot">.</span></a>
-    <nav class="nav-links" id="navLinks">
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="logo" aria-label="Kembali ke atas">SVF</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#project">Project</a>
       <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#gallery">Gallery</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 
-<!-- ============ HERO ============ -->
+<main>
 <section class="hero" id="home">
-  <div class="hero-grid"></div>
-  <div class="hero-inner">
-    <div class="hero-tag">MECHANICAL ENGINEERING · HVAC · QUALITY CONTROL</div>
-    <h1 class="hero-title">
-      Shandy Virgi firdaus
-    </h1>
-    <p class="hero-role">Fresh Graduate Teknik Mesin — spesialisasi perawatan HVAC, permesinan, dan sistem Quality Control berbasis Vision Sensor.</p>
-    <p class="hero-desc">Berbasis di Karawang, Jawa Barat. Terbiasa bekerja dengan prosedur preventive maintenance, keselamatan kerja, dan integrasi sistem deteksi otomatis untuk lini produksi.</p>
-    <div class="hero-actions">
-      <a href="#project" class="btn btn-primary">Lihat Proyek</a>
-      <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
-    </div>
-  </div>
-  <div class="hero-coords">
-    <span>06.3227° S</span>
-    <span>107.3376° E</span>
-    <span>KARAWANG, ID</span>
-  </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section class="section" id="about">
-  <div class="section-inner about-grid">
-    <div class="section-head">
-      <span class="section-index">01</span>
-      <h2>About</h2>
-    </div>
-    <div class="about-body">
-      <p class="lead">Lulusan Teknik Mesin dari SMK Indonesia Mas dengan pengalaman langsung di lapangan — mulai dari perawatan sistem HVAC di industri, hingga membangun perangkat Quality Control berbasis Vision Sensor menggunakan kamera dan Raspberry Pi.</p>
-      <p>Saya terbiasa bekerja dengan mesin bubut, prosedur perawatan mesin industri, dan instalasi sistem HVAC — dikombinasikan dengan ketertarikan pada otomasi dan sistem deteksi berbasis sensor visual. Pendekatan saya selalu berangkat dari kedisiplinan prosedur dan keselamatan kerja.</p>
-      <div class="about-facts">
-        <div class="fact">
-          <span class="fact-label">Domisili</span>
-          <span class="fact-value">Karawang, Jawa Barat</span>
-        </div>
-        <div class="fact">
-          <span class="fact-label">Pendidikan</span>
-          <span class="fact-value">SMK Indonesia Mas — Teknik Mesin</span>
-        </div>
-        <div class="fact">
-          <span class="fact-label">Minat</span>
-          <span class="fact-value">Mechanical · Maintenance · HVAC · Manufacturing · Quality Control</span>
-        </div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Fresh Graduate Teknik Mesin</p>
+      <h1>Shandy Virgi Firdaus</h1>
+      <p class="tagline">Mechanical Engineering | HVAC Maintenance | Manufacturing | Quality Control</p>
+      <p class="hero-desc">Lulusan Teknik Mesin SMK Indonesia Mas dengan pengalaman praktik di bidang HVAC Maintenance serta pelatihan Quality Control berbasis Vision Sensor di PT Pudak Scientific dan BBPVP Bandung. Memiliki keterampilan dalam perawatan dan instalasi AC, preventive maintenance, serta pemahaman dasar inspeksi kualitas berbasis teknologi visual. Berkomitmen untuk bekerja secara disiplin, teliti, dan mengutamakan keselamatan kerja.</p>
+      <div class="actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="cv/CV-Shandy-Virgi-Firdaus.pdf" class="btn btn-outline" id="cvBtn" download>Download CV</a>
       </div>
     </div>
-    <div class="about-photo">
+    <figure class="hero-photo">
       <img src="images/profil.jpg" alt="Foto profil Shandy Virgi Firdaus">
-      <div class="photo-frame-label">FIG. 01 — PROFILE</div>
+    </figure>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap narrow reveal">
+    <h2>About</h2>
+    <p>Lulusan Teknik Mesin SMK Indonesia Mas (2023–2026) dengan pengalaman praktik di bidang HVAC Maintenance, meliputi perawatan, instalasi, dan pemeriksaan unit AC. Memiliki keterampilan dasar mekanik, pengoperasian mesin bubut, serta pemahaman preventive maintenance dan keselamatan kerja.</p>
+    <p>Pada tahun 2026, mengikuti On-the-Job Training (OJT) Project-Based Learning di PT Pudak Scientific serta pelatihan Quality Control berbasis Vision Sensor di BBPVP Bandung. Memperoleh pengalaman pembelajaran dalam pengembangan sistem inspeksi visual menggunakan kamera, Raspberry Pi 4, dan Python.
+
+Memiliki minat untuk mengembangkan kompetensi di industri manufaktur, khususnya pada bidang Maintenance, Production, dan Quality Control. Mengutamakan ketelitian, kedisiplinan, keselamatan kerja, serta kesiapan untuk belajar dan mengikuti prosedur operasional perusahaan.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap reveal">
+    <h2>Skills</h2>
+    <div class="grid grid-4">
+      <article class="card">
+        <h3>Mechanical &amp; Maintenance</h3>
+        <ul><li>Pengoperasian Mesin Bubut — Memahami dasar pengoperasian mesin bubut untuk proses pengerjaan benda kerja sesuai kebutuhan</li><li>Bench Work (Kerja Bangku) — Menguasai keterampilan dasar pengerjaan manual, penggunaan perkakas tangan, dan penanganan benda kerja.</li><li>Preventive Maintenance — Memahami pelaksanaan perawatan berkala untuk membantu menjaga kondisi dan keandalan peralatan.</li><li>Occupational Health & Safety (K3) — Memahami pentingnya penerapan prosedur keselamatan kerja, penggunaan alat yang sesuai, dan menjaga area kerja tetap aman</li></ul>
+      </article>
+      <article class="card">
+        <h3>HVAC Maintenance</h3>
+        <ul><li>Preventive Maintenance — Perawatan berkala dan pembersihan komponen AC untuk menjaga kinerja sistem pendingin.
+
+HVAC Installation & Assembly — Pekerjaan instalasi, bongkar-pasang unit indoor dan outdoor, serta pemasangan kembali komponen AC.</li><li>Troubleshooting & Inspection — Pemeriksaan kondisi unit, identifikasi gangguan, dan membantu proses perbaikan AC.</li><li>Operational Testing — Pemeriksaan fungsi AC setelah proses perawatan, instalasi, atau perbaikan.</li><li>Tools Handling & K3 — Penggunaan perkakas kerja sesuai kebutuhan serta penerapan prosedur keselamatan selama pekerjaan berlangsung.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Quality Control</h3>
+        <ul><li>Quality Inspection — Memahami proses pemeriksaan produk untuk mengidentifikasi cacat dan ketidaksesuaian berdasarkan kriteria kualitas.</li><li>Machine Vision & Vision Sensor — Mempelajari penerapan teknologi kamera untuk mendukung inspeksi visual produk.</li><li>Raspberry Pi 4 Integration — Menggunakan Raspberry Pi 4 sebagai perangkat komputasi dalam pengembangan sistem inspeksi visual.</li></li>Python Programming & Image Processing — Menerapkan pemrograman Python dan konsep pengolahan citra untuk mendukung proses pemeriksaan berbasis kamera.<li></li>Defect Detection Testing — Melakukan pengujian sistem deteksi cacat produk dan mengevaluasi hasil inspeksi visual.</li><li>Manufacturing Fundamentals — Memahami dasar gambar teknik, elektronika, kerja bangku, dan proses pendukung manufaktur.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Technical Tools</h3>
+        <ul><li>AutoCAD &amp; gambar teknik</li><li>3D printing</li><li>Raspberry Pi 4</li><li>Python</li><li>Inventory</li></ul>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ EXPERIENCE ============ -->
-<section class="section section-alt" id="experience">
-  <div class="section-inner">
-    <div class="section-head">
-      <span class="section-index">02</span>
-      <h2>Experience</h2>
-    </div>
+<section id="experience">
+  <div class="wrap narrow reveal">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li>
+        <p class="date">Juli – Agustus 2026</p>
+        <h3>On Job Training — Project Based Learning</h3>
+        <p class="org">PT Pudak Scientific · Vokasi Nasional · 26 hari</p>
+        <p>Terlibat dalam pengembangan proyek Quality Control berbasis Vision Sensor dengan memanfaatkan kamera, Raspberry Pi 4, dan Python untuk mendukung proses inspeksi visual produk. Kegiatan ini memberikan pengalaman dalam penerapan teknologi otomasi dan computer vision untuk pemeriksaan kualitas di bidang manufaktur.</p>
+      </li>
+      <li>
+        <p class="date">Mei 2025 – Desember 2025</p>
+        <h3>Maintenance AC</h3>
+        <p class="org">Neneng Teknik</p>
+        <p>Menangani pekerjaan perawatan dan instalasi AC, meliputi pembersihan unit, bongkar-pasang, pemeriksaan kondisi komponen, serta membantu proses perbaikan. Memastikan pekerjaan dilakukan dengan teliti sesuai arahan teknisi dan prosedur keselamatan kerja.</p>
+      </li>
+      <li>
+        <p class="date">Desember 2024 - Mei 2025
+        <h3>Praktik Kerja Lapangan</h3>
+        </p>
+        <h3>Helper Maintenance HVAC</h3>
+        <p class="org">PKL — SMK Indonesia Mas</p>
+        <p>Membantu pekerjaan pemeliharaan dan instalasi sistem HVAC di lapangan.</p>
+      </li>
+    </ol>
+  </div>
+</section>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-date">DES 2024 — DES 2025</div>
-        <div class="timeline-content">
-          <h3>Maintenance AC</h3>
-          <div class="timeline-org">Neneng Teknik</div>
-          <p>Menangani pemeliharaan dan perbaikan sistem HVAC secara langsung di lapangan, menerapkan prosedur preventive maintenance dan keselamatan kerja pada setiap penugasan.</p>
-          <div class="timeline-photos">
-            <img src="images/hvac-1.jpg" alt="Dokumentasi pekerjaan HVAC 1">
-            <img src="images/hvac-2.jpg" alt="Dokumentasi pekerjaan HVAC 2">
-          </div>
+<section id="projects">
+  <div class="wrap reveal">
+    <h2>Projects</h2>
+    <div class="grid grid-3">
+      <article class="card project">
+        <div class="thumb pair">
+          <img src="images/hvac-1.jpg" alt="Dokumentasi pekerjaan HVAC" loading="lazy">
+          <img src="images/hvac-2.jpg" alt="Dokumentasi pekerjaan HVAC, tampak lain" loading="lazy">
         </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-date">SEBELUM 2024</div>
-        <div class="timeline-content">
-          <h3>Helper Maintenance HVAC</h3>
-          <div class="timeline-org">Praktik Kerja Lapangan (PKL)</div>
-          <p>Mendukung tim maintenance dalam instalasi dan pemeliharaan sistem HVAC, mempelajari alur kerja perawatan mesin industri secara langsung.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-date">28 JUL — 26 AGU 2026</div>
-        <div class="timeline-content">
-          <h3>On Job Training — Project Based Learning</h3>
-          <div class="timeline-org">PT Pudak Scientific · 26 hari</div>
-          <p>Mengembangkan perangkat Quality Control berbasis Vision Sensor menggunakan kamera, Raspberry Pi 4, dan Python. Bagian dari program Vokasi Nasional dengan sertifikat magang.</p>
-          <div class="timeline-photos">
-            <img src="images/pudak-kegiatan.jpg" alt="Kegiatan di PT Pudak Scientific">
-            <img src="images/pudak-sertifikat.jpg" alt="Sertifikat PT Pudak Scientific">
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-date">BBPVP BANDUNG</div>
-        <div class="timeline-content">
-          <h3>Pelatihan Teknis Tambahan</h3>
-          <div class="timeline-org">Balai Besar Pengembangan Vokasi dan Produktivitas Bandung</div>
-          <p>Kerja bangku, gambar teknik, AutoCAD, 3D printing, inventory, dan Quality Control berbasis Vision Sensor — bersertifikat KEMNAKER.</p>
-          <div class="timeline-photos">
-            <img src="images/bbpvp.jpg" alt="Kegiatan pelatihan BBPVP Bandung">
-          </div>
-        </div>
-      </div>
+        <h3>Dokumentasi Proyek HVAC</h3>
+        <p>Pekerjaan pemeliharaan dan instalasi sistem HVAC di lapangan.</p>
+        <p class="tags">HVAC · Maintenance · Instalasi</p>
+      </article>
+      <article class="card project">
+        <div class="thumb"><img src="images/pudak-kegiatan.jpg" alt="Kegiatan On Job Training di PT Pudak Scientific" loading="lazy"></div>
+        <h3>QC Vision Sensor</h3>
+        <p>Perangkat Quality Control berbasis kamera, Raspberry Pi 4, dan Python, dikembangkan selama OJT di PT Pudak Scientific.</p>
+        <p class="tags">Vision Sensor · Raspberry Pi · Python</p>
+      </article>
+      <article class="card project">
+        <div class="thumb"><img src="images/bbpvp.jpg" alt="Kegiatan praktik di BBPVP Bandung" loading="lazy"></div>
+        <h3>Praktik Smart Manufaktur</h3>
+        <p>Pelatihan di BBPVP Bandung: kerja bangku, gambar teknik, AutoCAD, dan 3D printing.</p>
+        <p class="tags">Kerja Bangku · AutoCAD · 3D Printing</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ PROJECT ============ -->
-<section class="section" id="project">
-  <div class="section-inner">
-    <div class="section-head">
-      <span class="section-index">03</span>
-      <h2>Featured Project</h2>
-    </div>
-
-    <div class="project-card">
-      <div class="project-meta">
-        <span class="project-tag">VISION SENSOR</span>
-        <span class="project-tag">RASPBERRY PI 4</span>
-        <span class="project-tag">PYTHON</span>
-      </div>
-      <h3>Vision Sensor QC System</h3>
-      <p>Perangkat Quality Control berbasis kamera dan Raspberry Pi 4 yang dikembangkan selama On Job Training di PT Pudak Scientific. Sistem ini mendeteksi dan memverifikasi kualitas objek secara otomatis menggunakan pemrosesan citra, menggantikan pemeriksaan manual yang lebih rentan terhadap human error.</p>
-      <div class="project-specs">
-        <div class="spec">
-          <span class="spec-label">Sektor</span>
-          <span class="spec-value">Manufacturing QC</span>
-        </div>
-        <div class="spec">
-          <span class="spec-label">Hardware</span>
-          <span class="spec-value">Kamera + Raspberry Pi 4</span>
-        </div>
-        <div class="spec">
-          <span class="spec-label">Software</span>
-          <span class="spec-value">Python</span>
-        </div>
-        <div class="spec">
-          <span class="spec-label">Durasi</span>
-          <span class="spec-value">26 hari</span>
-        </div>
-      </div>
+<section id="certificates">
+  <div class="wrap reveal">
+    <h2>Certificates</h2>
+    <div class="grid grid-3">
+      <article class="card cert">
+        <div class="thumb doc"><img src="images/pudak-sertifikat.jpg" alt="Sertifikat magang PT Pudak Scientific" loading="lazy"></div>
+        <h3>Sertifikat Magang Vokasi Nasional</h3>
+        <p class="org">PT Pudak Scientific</p>
+        <a class="btn btn-outline btn-sm" href="images/pudak-sertifikat.jpg" target="_blank" rel="noopener">Lihat Dokumen</a>
+      </article>
+      <article class="card cert">
+        <div class="thumb doc"><img src="images/sertifikat-kemnaker.jpg" alt="Sertifikat KEMNAKER BBPVP Bandung" loading="lazy"></div>
+        <h3>Sertifikat KEMNAKER</h3>
+        <p class="org">BBPVP Bandung · Vision Sensor QC</p>
+        <a class="btn btn-outline btn-sm" href="images/sertifikat-kemnaker.jpg" target="_blank" rel="noopener">Lihat Dokumen</a>
+      </article>
+      <article class="card cert">
+        <div class="thumb doc"><img src="images/sertifikat-bnsp.jpg" alt="Sertifikat BNSP Quality Control Vision Sensor" loading="lazy"></div>
+        <h3>Sertifikat BNSP</h3>
+        <p class="org">Quality Control berbasis Vision Sensor</p>
+        <a class="btn btn-outline btn-sm" href="images/sertifikat-bnsp.jpg" target="_blank" rel="noopener">Lihat Dokumen</a>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ SKILLS ============ -->
-<section class="section section-alt" id="skills">
-  <div class="section-inner">
-    <div class="section-head">
-      <span class="section-index">04</span>
-      <h2>Technical Skills</h2>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-block">
-        <h4>HVAC Maintenance</h4>
-        <p>Pemeliharaan dan instalasi sistem HVAC, troubleshooting lapangan, prosedur preventive maintenance.</p>
-      </div>
-      <div class="skill-block">
-        <h4>Permesinan</h4>
-        <p>Pengoperasian mesin bubut, kerja bangku, perawatan mesin industri.</p>
-      </div>
-      <div class="skill-block">
-        <h4>Gambar Teknik &amp; CAD</h4>
-        <p>Gambar teknik manual dan AutoCAD, termasuk dasar 3D printing.</p>
-      </div>
-      <div class="skill-block">
-        <h4>Vision Sensor QC</h4>
-        <p>Pengembangan sistem deteksi kualitas berbasis kamera, Raspberry Pi 4, dan Python.</p>
-      </div>
-      <div class="skill-block">
-        <h4>Keselamatan Kerja</h4>
-        <p>Penerapan prosedur K3 dan preventive maintenance secara konsisten di setiap penugasan.</p>
-      </div>
-      <div class="skill-block">
-        <h4>Inventory</h4>
-        <p>Pengelolaan dan pencatatan inventaris peralatan kerja.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CERTIFICATIONS ============ -->
-<section class="section" id="certifications">
-  <div class="section-inner">
-    <div class="section-head">
-      <span class="section-index">05</span>
-      <h2>Certifications</h2>
-    </div>
-
-    <div class="cert-list">
-      <button class="cert-item" data-img="images/pudak-sertifikat.jpg">
-        <span class="cert-name">Sertifikat Magang — Program Vokasi Nasional</span>
-        <span class="cert-org">Ditempatkan di PT Pudak Scientific</span>
-        <span class="cert-view">Lihat sertifikat →</span>
-      </button>
-      <button class="cert-item" data-img="images/sertifikat-bnsp.jpg">
-        <span class="cert-name">Sertifikat BNSP — Quality Control Berbasis Vision Sensor</span>
-        <span class="cert-org">Badan Nasional Sertifikasi Profesi</span>
-        <span class="cert-view">Lihat sertifikat →</span>
-      </button>
-      <button class="cert-item" data-img="images/sertifikat-kemnaker.jpg">
-        <span class="cert-name">Sertifikat KEMNAKER — Vision Sensor, Kerja Bangku, Gambar Teknik, AutoCAD, 3D Printing, Inventory</span>
-        <span class="cert-org">BBPVP Bandung</span>
-        <span class="cert-view">Lihat sertifikat →</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">&times;</button>
-  <img src="" alt="Sertifikat" id="lightboxImg">
-</div>
-
-<!-- ============ GALLERY ============ -->
-<section class="section section-alt" id="gallery">
-  <div class="section-inner">
-    <div class="section-head">
-      <span class="section-index">06</span>
-      <h2>Gallery</h2>
-    </div>
-
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="images/profil.jpg" alt="Foto profil"></div>
-      <div class="gallery-item"><img src="images/hvac-1.jpg" alt="Pekerjaan HVAC 1"></div>
-      <div class="gallery-item"><img src="images/hvac-2.jpg" alt="Pekerjaan HVAC 2"></div>
-      <div class="gallery-item"><img src="images/bbpvp.jpg" alt="Kegiatan BBPVP Bandung"></div>
-      <div class="gallery-item"><img src="images/pudak-kegiatan.jpg" alt="Kegiatan PT Pudak Scientific"></div>
-      <div class="gallery-item"><img src="images/pudak-sertifikat.jpg" alt="Sertifikat PT Pudak Scientific"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CAREER INTEREST + WORK VALUES ============ -->
-<section class="section" id="values">
-  <div class="section-inner values-grid">
-    <div>
-      <div class="section-head">
-        <span class="section-index">07</span>
-        <h2>Career Interest</h2>
-      </div>
-      <p>Terbuka untuk peran di bidang <strong>Mechanical, Maintenance, HVAC, Manufacturing,</strong> dan <strong>Quality Control</strong> — khususnya posisi yang menggabungkan keterampilan permesinan konvensional dengan sistem deteksi dan otomasi berbasis sensor.</p>
-    </div>
-    <div>
-      <div class="section-head">
-        <span class="section-index">08</span>
-        <h2>Work Values</h2>
-      </div>
-      <ul class="values-list">
-        <li>Disiplin terhadap prosedur dan keselamatan kerja</li>
-        <li>Teliti dalam preventive maintenance</li>
-        <li>Terbuka belajar teknologi baru di lini produksi</li>
-        <li>Kerja sama tim di lapangan</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="section section-contact" id="contact">
-  <div class="section-inner">
-    <div class="section-head">
-      <span class="section-index">09</span>
-      <h2>Contact</h2>
-    </div>
-    <p class="contact-lead">Terbuka untuk peluang kerja maupun diskusi seputar maintenance, HVAC, dan sistem Quality Control.</p>
-    <div class="contact-grid">
-      <a href="mailto:email-kamu@example.com" class="contact-item">
-        <span class="contact-label">Email</span>
-        <span class="contact-value">viergifirdaus05@Gmail.com</span>
+<section id="contact">
+  <div class="wrap narrow reveal">
+    <h2>Contact</h2>
+    <p>Terbuka untuk peluang kerja di bidang Mechanical, Maintenance, HVAC, Manufacturing, dan Quality Control.</p>
+    <div class="contacts">
+      <a class="contact" href="mailto:viergiefirdaus05@gmail.com">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span><small>Email</small>viergiefirdaus05@gmail.com</span>
       </a>
-      <a href="tel:+6280000000000" class="contact-item">
-        <span class="contact-label">Telepon</span>
-        <span class="contact-value">+62 857-7121-9100</span>
+      <a class="contact" href="https://wa.me/6285771219100" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
+        <span><small>WhatsApp</small>0857-7121-9100</span>
       </a>
-      <div class="contact-item">
-        <span class="contact-label">Lokasi</span>
-        <span class="contact-value">Karawang, Jawa Barat</span>
-      </div>
     </div>
   </div>
 </section>
+</main>
 
-<footer class="footer">
-  <span>© 2026 Shandy Virgi Firdaus</span>
-  <span>Mechanical Engineering · HVAC · Quality Control</span>
-</footer>
+<footer class="footer"><div class="wrap">© 2026 Shandy Virgi Firdaus. All rights reserved.</div></footer>
 
-<script src="script.js"></script>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/script.js"></script>
 </body>
 </html>
